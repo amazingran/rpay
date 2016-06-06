@@ -4,7 +4,7 @@
 
 use yii\helpers\Html;
 
-$this->title = 'Topup';
+$this->title = 'Bankpay';
 $this->params['breadcrumbs'][] = $this->title;
 $this->context->layout='paymain';
 ?>

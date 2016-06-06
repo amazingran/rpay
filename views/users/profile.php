@@ -14,63 +14,29 @@ $this->context->layout='zoemain';
 
 ?>
 <div class="site-contact">
-          <div class="panel panel-default">
-              <div class="panel-heading">Panel heading without title</div>
-              <div class="panel-body">
-                <form>
-                    <div class="form-group">
-                        <img class="media-object img-circle" src="..." alt="...">
-                        <label for="exampleInputFile">File input</label>
-                        <input type="file" id="exampleInputFile">
+  <div class="panel panel-default">
+    <div class="panel-heading">Public profile</div>
+    <div class="panel-body">
+      <form>
+        <div class="form-group">
+          <img class="media-object img-circle" src="..." alt="...">
+          <label for="exampleInputFile">File input</label>
+          <input type="file" id="exampleInputFile">
 
-                        <p class="help-block">Example block-level help text here.</p>
-                    </div>
+          <p class="help-block">Example block-level help text here.</p>
+        </div>
+        <div class="form-group">
+        <label for="name">Name</label>
+          <input type="text" class="form-control" id="name" placeholder="name">
+        </div>
 
-                    <div class="form-group">
-                        <label for="exampleInputEmail1">Email address</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleInputPassword1">Password</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                    </div>
-                    <div class="checkbox">
-                        <label>
-                          <input type="checkbox"> Check me out
-                      </label>
-                  </div>
-                  <button type="submit" class="btn btn-success">Submit</button>
-              </form>
-          </div>
-      </div>
-      <div class="panel panel-default">
-          <div class="panel-heading">Panel heading without title</div>
-          <div class="panel-body">
-
-            <form>
-                <div class="form-group">
-                    <img class="media-object img-circle" src="..." alt="...">
-                    <label for="exampleInputFile">File input</label>
-                    <input type="file" id="exampleInputFile">
-
-                    <p class="help-block">Example block-level help text here.</p>
-                </div>
-
-                <div class="form-group">
-                    <label for="exampleInputEmail1">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
-                </div>
-                <div class="form-group">
-                    <label for="exampleInputPassword1">Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                </div>
-                <div class="checkbox">
-                    <label>
-                      <input type="checkbox"> Check me out
-                  </label>
-              </div>
-              <button type="submit" class="btn btn-success">Submit</button>
-          </form>
-      </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+        </div>
+        <button type="submit" class="btn btn-success">Update Profile</button>
+      </form>
+    </div>
   </div>
+</div>
 </div>
