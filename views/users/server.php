@@ -8,40 +8,43 @@ use yii\helpers\Html;
 use yii\bootstrap\ActiveForm;
 use yii\captcha\Captcha;
 
-$this->title = 'ZOE';
+$this->title = 'Service';
 $this->params['breadcrumbs'][] = $this->title;
-$this->context->layout='zoemain';
-
 ?>
-<div class="site-contact">
-  <div class="panel panel-default">
-    <div class="panel-heading">My Service</div>
-    <div class="panel-body">
-        <div class="form-group">
-          <label class="col-md-2">Service Name</label>
-          <label class="text-danger col-md-1">200</label>
-          <label class="text-danger col-md-9">&nbsp;&nbsp;</label>
+<div class="row">
+  <div class="col-lg-3">
+    <?php echo $this->render('_usersidebar');?>
+  </div>
+  <div class="col-lg-9">
+
+    <div class="site-contact">
+      <div class="panel panel-default">
+        <div class="panel-heading">My Service</div>
+        <div class="panel-body">
+          <table class="table">
+            <tr>
+              <td>Service Name</td>
+              <td>111</td>
+            </tr>
+            <tr>
+              <td>Up Limit</td>
+              <td>RMB</td>
+            </tr>
+            <tr>
+              <td>Down Limit</td>
+              <td>232</td>
+            </tr>
+            <tr>
+              <td>Com Limit</td>
+              <td>232</td>
+            </tr>
+            <tr>
+              <td>Uptime Limit</td>
+              <td></td>
+            </tr>
+          </table>
         </div>
-        <div class="form-group">
-          <label class="col-md-2">Up Limit</label>
-          <label class="text-danger col-md-1">100</label>
-          <label class="text-danger col-md-9">MB/s</label>
-        </div>
-        <div class="form-group">
-          <label class="col-md-2">Down Limit</label>
-          <label class="text-danger col-md-1">1000</label>
-          <label class="text-danger col-md-9">MB/s</label>
-        </div>
-        <div class="form-group">
-          <label class="col-md-2">Com Limit</label>
-          <label class="text-danger col-md-1">1100</label>
-          <label class="text-danger col-md-9">MB/s</label>
-        </div>
-        <div class="form-group">
-          <label class="col-md-2">Uptime Limit</label>
-          <label class="text-danger col-md-1">1100</label>
-          <label class="text-danger col-md-9">MB/s</label>
-        </div>
+      </div>
     </div>
   </div>
 </div>

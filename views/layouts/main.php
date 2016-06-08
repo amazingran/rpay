@@ -78,6 +78,37 @@ AppAsset::register($this);
 </footer>
 
 <?php $this->endBody() ?>
+<script type="text/javascript">
+    function checkPlatform(phsb,pcsb){
+        //平台、设备和操作系统
+        var system = {
+            win: false,
+            mac: false,
+            xll: false,
+            ipad:false
+        };
+        //检测平台
+        var p = navigator.platform;
+        system.win = p.indexOf("Win") == 0;
+        system.mac = p.indexOf("Mac") == 0;
+        system.x11 = (p == "X11") || (p.indexOf("Linux") == 0);
+        system.ipad = (navigator.userAgent.match(/iPad/i) != null)?true:false;
+        if (system.win || system.mac || system.xll||system.ipad) {
+            document.getElementById(phsb).className="hidden";
+
+        } else {
+
+            document.getElementById(pcsb).className="hidden";
+        }
+
+    }
+    window.onload=function(){
+
+        checkPlatform('phonesidebar','pcsidebar');
+    }
+
+</script>
+
 </body>
 </html>
 <?php $this->endPage() ?>
